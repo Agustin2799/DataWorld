@@ -3,9 +3,9 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <section className=" w-full min-h-screen flex justify-between items-center lg:flex-row flex-col bg-black/70">
+    <section className=" w-full min-h-screen flex justify-between items-center lg:flex-row flex-col ">
       {/* Logo */}
-      <header className="w-full py-10 mx-auto flex flex-col items-center justify-center text-white">
+      <header className="w-full pt-10 mx-auto flex flex-col items-center justify-center text-white">
         <div className="flex items-center justify-center w-full h-auto">
           <Link className="" to="">
             <span className="ml-3 text-3xl font-light text-white uppercase tracking-widest bg-black">
@@ -13,28 +13,27 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
           {/* Texto */}
-          <div className="mx-auto md:ms-10 my-20 flex flex-wrap flex-col items-start gap-4 z-50 lg:w-3/5 w-5/6">
-            <h1 className="text-5xl text-white font-light">
+          <div className=" text-center md:text-start my-20 flex flex-wrap flex-col items-center md:items-start gap-4 z-50 lg:w-3/5 w-5/6">
+            <h1 className="text-5xl text-white font-light ">
               <span className="font-semibold text-6xl">
                 Innovación y tecnología
               </span>{" "}
               para un mundo conectado.
             </h1>
-            <p className="leading-relaxed mt-4 text-gray-200 md:block hidden text-xl">
-              En Data World, ofrecemos soluciones tecnológicas avanzadas para
-              impulsar tu negocio. Desde desarrollo de software hasta
-              inteligencia artificial y ciberseguridad, conectamos tu empresa
-              con el futuro.
-            </p>
-            <button className="text-black bg-white border-0 py-2 px-8 my-4 text-md font-semibold tracking-widest uppercase hover:bg-gray-300 transition-all hover:scale-125 duration-500">
+            <div className="mt-10 flex flex-col md:flex-row gap-2 md:gap-7">
+              <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center">
               Servicios
             </button>
+            <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center">
+              Contacto
+            </button>
+            </div>
           </div>
 
           {/* Íconos */}
-          <div className="z-50 flex flex-row md:flex-col items-center justify-center gap-10 md:me-10">
+          <div className="z-50 flex flex-row md:flex-col items-center justify-center gap-10">
             <Link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

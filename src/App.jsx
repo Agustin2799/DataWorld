@@ -11,11 +11,13 @@ function App() {
   return (
     <BrowserRouter>
       <Background />
-      <Header />
-      <Services />
-      <About />
+      <div className="px-5 sm:px-10 lg:px-20 bg-black/70">
+        <Header />
+        <About />
+        <Services />
+      </div>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App

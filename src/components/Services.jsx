@@ -3,8 +3,9 @@ import Service from './Service';
 
 const Services = () => {
   return (
-    <section className="w-full min-h-screen bg-black/70 py-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-10 md:px-20 gap-10">
+    <section className="w-full min-h-screen ">
+      <div className='font-ligth text-5xl text-white pb-10 md:py-20 px-15'>Servicios</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <Service
           img={"analitica.avif"}
           name={"Big Data y Analítica Avanzada"}
@@ -12,13 +13,13 @@ const Services = () => {
             "Extraemos valor de tus datos a través de modelos de análisis avanzado, inteligencia de negocios y visualización interactiva. Con nuestras soluciones, podrás tomar decisiones basadas en datos en tiempo real, identificar tendencias de mercado y mejorar la eficiencia operativa de tu empresa."
           }
         />
-          <Service
-            img={"cloud.avif"}
-            name={"Infraestructura en la Nube"}
-            description={
-              "Migramos y gestionamos tu infraestructura tecnológica en plataformas cloud como AWS, Google Cloud o Azure. Ofrecemos soluciones escalables, seguras y flexibles que garantizan alto rendimiento, reducción de costos operativos y acceso seguro a la información desde cualquier lugar del mundo."
-            }
-          />
+        <Service
+          img={"cloud.avif"}
+          name={"Infraestructura en la Nube"}
+          description={
+            "Migramos y gestionamos tu infraestructura tecnológica en plataformas cloud como AWS, Google Cloud o Azure. Ofrecemos soluciones escalables, seguras y flexibles que garantizan alto rendimiento, reducción de costos operativos y acceso seguro a la información desde cualquier lugar del mundo."
+          }
+        />
         <Service
           img={"ia.avif"}
           name={"Inteligencia Artificial y Machine Learning"}
