@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <section className=" w-full min-h-screen flex justify-between items-center lg:flex-row flex-col ">
       {/* Logo */}
-      <header className="w-full pt-10 mx-auto flex flex-col items-center justify-center text-white">
-        <div className="flex items-center justify-center w-full h-auto">
+      <header className="w-full mx-auto flex flex-col items-center justify-between text-white">
+        <div className="flex items-center justify-center w-full h-auto pt-10 lg:pt-0">
           <Link className="" to="">
             <span className="ml-3 text-3xl font-light text-white uppercase tracking-widest bg-black">
               Data <span className="text-2xl font-semibold">World</span>
@@ -16,13 +16,13 @@ const Header = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
           {/* Texto */}
           <div className=" text-center md:text-start my-20 flex flex-wrap flex-col items-center md:items-start gap-4 z-50 lg:w-3/5 w-5/6">
-            <h1 className="text-5xl text-white font-light ">
-              <span className="font-semibold text-6xl">
+            <h1 className="text-3xl text-white font-light break-words ">
+              <span className="font-semibold text-4xl md:text-6xl">
                 Innovación y tecnología
               </span>{" "}
               para un mundo conectado.
             </h1>
-            <div className="mt-10 flex flex-col md:flex-row gap-2 md:gap-7">
+            <div className="mt-10 flex flex-col md:flex-row gap-2 md:gap-7 scale-75 md:scale-100">
               <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center">
               Servicios
             </button>
@@ -33,7 +33,7 @@ const Header = () => {
           </div>
 
           {/* Íconos */}
-          <div className="z-50 flex flex-row md:flex-col items-center justify-center gap-10">
+          <div className="z-50 flex flex-row md:flex-col items-center justify-center my-auto gap-10">
             <Link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

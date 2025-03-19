@@ -16,7 +16,7 @@ const Service = ({img, name, description}) => {
           <h2 className="text-2xl font-semibold  pb-3">{name}</h2>
           <p className="pb-5 font-light text-slate-400">{description}</p>
         </div>
-        <button className="px-10 py-5 bg-black/60 text-white">Ver más</button>
+        <button className="px-10 py-5 bg-black/60 text-white rounded-bl-3xl rounded-tr-3xl">Ver más</button>
       </div>
     </div>
   );
