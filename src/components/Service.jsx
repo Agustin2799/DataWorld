@@ -2,7 +2,7 @@ import React from 'react'
 
 const Service = ({img, name, description}) => {
   return (
-    <div className="flex flex-col bg-gray-800/80 w-full rounded-tr-3xl rounded-bl-3xl border border-gray-600">
+    <div className="flex flex-col bg-gray-800/80 w-full rounded-tr-3xl rounded-bl-3xl border border-gray-600 md:scale-95">
       {/* Contenedor de la imagen con un alto fijo */}
       <div className="h-[250px]">
         <img
