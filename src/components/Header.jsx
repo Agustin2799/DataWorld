@@ -3,9 +3,9 @@ import { Link } from "react-router";
 
 const Header = () => {
   return (
-    <section className=" w-full min-h-screen flex justify-between items-center lg:flex-row flex-col ">
+    <section className=" w-full min-h-screen flex  justify-between items-center lg:flex-row flex-col ">
       {/* Logo */}
-      <header className="w-full mx-auto flex flex-col items-center justify-between text-white">
+      <header className="w-full mx-auto my-auto flex flex-col items-center justify-between text-white">
         <div className="flex items-center justify-center w-full h-auto pt-10 lg:pt-0">
           <Link className="" to="">
             <span className="ml-3 text-3xl font-light text-white uppercase tracking-widest bg-black">
