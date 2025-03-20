@@ -23,12 +23,12 @@ const Header = () => {
               para un mundo conectado.
             </h1>
             <div className="mt-10 flex flex-col md:flex-row gap-2 md:gap-7 scale-75 md:scale-100">
-              <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center rounded-bl-3xl rounded-tr-3xl">
-              Servicios
-            </button>
-            <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center rounded-bl-3xl rounded-tr-3xl">
-              Contacto
-            </button>
+              <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center rounded-bl-3xl rounded-tr-3xl border-none hover:scale-x-105 hover:font-normal transition-all duration-300">
+                Servicios
+              </button>
+              <button className="min-w-[250px] px-5 py-2 w-min text-3xl bg-white text-black font-light text-center flex justify-center items-center rounded-bl-3xl rounded-tr-3xl border-none hover:scale-x-105 hover:font-normal transition-all duration-300">
+                Contacto
+              </button>
             </div>
           </div>
 
