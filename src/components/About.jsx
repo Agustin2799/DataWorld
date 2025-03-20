@@ -64,7 +64,7 @@ const About = () => {
             options={{
               autoStart: true,
               loop: false, // No se borra
-              delay: 20, // Velocidad de escritura
+              delay: 10, // Velocidad de escritura
               wrapperClassName: "typewriter-text", // Agregar clase para el estilo
             }}
           />

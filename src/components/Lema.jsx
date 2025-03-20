@@ -6,9 +6,11 @@ const Lema = () => {
       <div
         className="h-screen w-full bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url(city3.jpg)" }}
-          ></div>
-          <div className="absolute bottom-20 left-20 text-white font-semibold text-4xl lg:text-7xl ">El mundo avanza. Tu empresa también.
-          </div>
+      ></div>
+      <div className="absolute bottom-50 left-10 text-white text-4xl lg:text-7xl flex flex-col font-extrabold">
+        <div>La tecnología avanza</div>
+        <div>y nosotros con ella.</div>
+      </div>
     </div>
   );
 };
