@@ -22,7 +22,7 @@ const Contacto = () => {
        <div className="font-ligth text-5xl text-white pb-10 md:py-20 md:pb-10 px-15 text-center">
          Contacto
        </div>
-       <div className="max-w-lg w-5/6 md:w-2/3 mx-auto p-6 bg-white/10 rounded-bl-3xl rounded-tr-3xl shadow-lg">
+       <div className="max-w-lg w-full md:w-7/12 mx-auto p-6 bg-white/10 rounded-bl-3xl rounded-tr-3xl shadow-lg">
          <form onSubmit={handleSubmit} className="space-y-4">
            <div>
              <label className="block text-white mb-2">Nombre</label>
