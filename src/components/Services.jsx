@@ -3,7 +3,7 @@ import Service from './Service';
 
 const Services = () => {
   return (
-    <section className="w-full min-h-screen pb-20">
+    <section id="services" className="w-full min-h-screen pb-20">
       <div className='font-ligth text-5xl text-white pb-10 md:py-20 px-15'>Servicios</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <Service
