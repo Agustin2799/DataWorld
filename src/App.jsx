@@ -6,7 +6,7 @@ import Background from "./components/Background";
 import Services from "./components/Services";
 import Lema from "./components/Lema";
 import Contacto from "./components/Contacto";
-import Footer from "./components/footer";
+import Pie from "./components/Pie";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +23,7 @@ function App() {
       <div className="px-5 sm:px-10 lg:px-20 bg-black/70">
         <Contacto />
       </div>
-      <Footer />
+      <Pie />
     </BrowserRouter>
   );
 }

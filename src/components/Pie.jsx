@@ -1,4 +1,4 @@
-const Footer = () => {
+const Pie = () => {
   return (
     <footer className="relative w-full h-auto backdrop-blur-md text-white py-6">
       {/* Capa negra semitransparente */}
@@ -28,4 +28,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Pie;

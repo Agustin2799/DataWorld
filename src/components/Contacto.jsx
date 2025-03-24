@@ -8,27 +8,45 @@ export default function ContactForm() {
   });
   const [errors, setErrors] = useState({});
 
-  const validate = () => {
-    let newErrors = {};
-    if (!formData.name.trim()) newErrors.name = "El nombre es obligatorio";
-    if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/))
-      newErrors.email = "Correo inválido";
-    if (!formData.message.trim())
-      newErrors.message = "El mensaje no puede estar vacío";
-    return newErrors;
+  const validateField = (name, value) => {
+    let error = "";
+    if (name === "name" && !value.trim()) error = "El nombre es obligatorio";
+    if (name === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))
+      error = "Correo inválido";
+    if (name === "message" && !value.trim())
+      error = "El mensaje no puede estar vacío";
+    return error;
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+
+    // Validar en tiempo real y eliminar el error si el campo es válido
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: validateField(name, value) || undefined,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length === 0) {
+    const newErrors = {
+      name: validateField("name", formData.name),
+      email: validateField("email", formData.email),
+      message: validateField("message", formData.message),
+    };
+
+    // Filtramos errores vacíos
+    const filteredErrors = Object.fromEntries(
+      Object.entries(newErrors).filter(([_, v]) => v)
+    );
+
+    setErrors(filteredErrors);
+
+    if (Object.keys(filteredErrors).length === 0) {
       console.log("Form submitted:", formData);
     }
-    setErrors(validationErrors);
   };
 
   return (
@@ -79,7 +97,7 @@ export default function ContactForm() {
           </div>
           <button
             type="submit"
-            className="w-full bg-white text-balck text-xl p-2 rounded-bl-3xl rounded-tr-3xl hover:bg-black hover:text-white transition-all duration-500"
+            className="w-full bg-white text-black text-xl p-2 rounded-bl-3xl rounded-tr-3xl hover:bg-black hover:text-white transition-all duration-500"
           >
             Enviar
           </button>
