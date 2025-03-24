@@ -1,25 +1,23 @@
-import Header from "./components/Header";
-import { BrowserRouter } from "react-router";
-import About from "./components/About";
+
+import { BrowserRouter, Routes, Route } from "react-router";
 import Background from "./components/Background";
-import Services from "./components/Services";
-import Lema from "./components/Lema";
-import Contacto from "./components/Contacto";
 import Pie from "./components/Pie";
+import { Toaster } from "react-hot-toast"
+import Home from "./views/Home";
+import AboutService from "./views/AboutService";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+      <Toaster />
       <Background />
-      <div className="px-5 sm:px-10 lg:px-20 bg-black/70">
-        <Header />
-        <About />
-        <Services />
-      </div>
-      <Lema />
-      <div className="px-5 sm:px-10 lg:px-20 bg-black/70">
-        <Contacto />
-      </div>
+      <Routes >
+        {/* Rutas que se gestionan con react-router */}
+        <Route path="/" element={<Home />} />
+        <Route path="/service" element={<AboutService />} />
+      </Routes>
       <Pie />
     </BrowserRouter>
   );

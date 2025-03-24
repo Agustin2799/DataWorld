@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ export default function ContactForm() {
 
     if (Object.keys(filteredErrors).length === 0) {
       console.log("Form submitted:", formData);
+       toast.success("Formulario enviado.");
     }
   };
 
@@ -96,6 +98,7 @@ export default function ContactForm() {
             )}
           </div>
           <button
+           
             type="submit"
             className="w-full bg-white text-black text-xl p-2 rounded-bl-3xl rounded-tr-3xl hover:bg-black hover:text-white transition-all duration-500"
           >
