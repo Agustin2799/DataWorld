@@ -21,13 +21,13 @@ const Service = ({ img, name, description }) => {
         />
       </div>
       <div className="flex flex-col text-white px-7 py-5 flex-1">
-        <div className="flex-1">
-          <h2 className="text-2xl font-semibold  pb-3">{name}</h2>
-          <p className="pb-5 font-light text-slate-400">{description}</p>
+        <div className="flex-1 mb-6">
+          <h2 className="text-3xl font-light">{name}</h2>
+          {/* <p className="pb-5 font-light text-slate-400">{description}</p> */}
         </div>
         <button
           onClick={() => handleClick()}
-          className="px-10 py-5 bg-black/60 text-white rounded-bl-3xl rounded-tr-3xl relative border overflow-hidden group hover:scale-105 transition-all duration-500"
+          className="px-10 py-5 text-xl font-light bg-black/60 text-white rounded-bl-3xl rounded-tr-3xl relative border overflow-hidden group hover:scale-105 transition-all duration-500"
         >
           Ver más
           {/* Esfera que se expande */}
