@@ -47,15 +47,15 @@ const About = () => {
                 .typeString(
                   "En Data World, nos apasiona la innovación y la tecnología. Nos especializamos en ofrecer soluciones tecnológicas avanzadas que impulsan a las empresas hacia el futuro."
                 )
-                .pauseFor(1000)
+                .pauseFor(500)
                 .typeString(
                   "<br/><br/>Con un equipo de expertos en desarrollo de software, inteligencia artificial y ciberseguridad, ayudamos a transformar negocios mediante la integración de herramientas digitales de vanguardia."
                 )
-                .pauseFor(1000)
+                .pauseFor(500)
                 .typeString(
                   "<br/><br/>Nuestra misión es conectar el mundo a través de la tecnología, brindando a las empresas las herramientas necesarias para crecer, innovar y liderar en la era digital."
                 )
-                .pauseFor(1000)
+                .pauseFor(500)
                 .typeString(
                   "<br/><br/>En Data World, creemos que la tecnología no solo resuelve problemas, sino que también crea oportunidades ilimitadas."
                 )
@@ -64,7 +64,7 @@ const About = () => {
             options={{
               autoStart: true,
               loop: false, // No se borra
-              delay: 10, // Velocidad de escritura
+              delay: 5, // Velocidad de escritura
               wrapperClassName: "typewriter-text", // Agregar clase para el estilo
             }}
           />
